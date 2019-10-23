@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <h1>myawesometodolist.ie</h1>
     <p></p>
   </div>
 </template>
