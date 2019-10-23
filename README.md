@@ -1,2 +1,13 @@
 # git-wizard
-How to split a massive PR easily using git magic
+
+## What is this?
+
+This is to illustrate some intermediate/advanced git usage.
+The app itslef is a To-Do list but it doesn't really matter.
+
+## Project setup
+
+```
+npm install
+npm run serve
+```
