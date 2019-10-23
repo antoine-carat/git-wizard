@@ -25,5 +25,18 @@ export default {
   border: 1px dashed #2c3e50;
   padding: 1%;
   width: 80%;
+
+  .item {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-between;
+    text-align: left;
+
+    border: 1px solid #2c3e50;
+    padding: 1%;
+    margin: 1% 0%;
+    width: 98%;
+  }
 }
 </style>
