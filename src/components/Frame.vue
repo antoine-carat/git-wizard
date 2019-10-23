@@ -1,6 +1,9 @@
 <template>
-  <div class="hello">
-    <p></p>
+  <div class="frame">
+    <span class="item" v-for="item in items" :key="item.title">
+      <span class="title">{{ item.title }}</span>
+      <input type="checkbox" class="box" name="" id="" :checked="item.done">
+    </span>
   </div>
 </template>
 
@@ -13,18 +16,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.frame {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: space-evenly;
+
+  border: 1px dashed #2c3e50;
+  padding: 1%;
+  width: 80%;
 }
 </style>
