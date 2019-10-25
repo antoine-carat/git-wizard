@@ -2,7 +2,7 @@
   <div class="frame">
     <span class="item" v-for="item in items" :key="item.title">
       <span class="title" :class="{stroke: item.done}">{{ item.title }}</span>
-      <input type="checkbox" class="box" name="" id="" :checked="item.done">
+      <input type="checkbox" class="box" name="" id="" v-model="item.done">
     </span>
   </div>
 </template>
