@@ -1,8 +1,8 @@
 <template>
   <div class="frame">
     <span class="item" v-for="item in items" :key="item.title">
-      <span class="title">{{ item.title }}</span>
-      <input type="checkbox" class="box" name="" id="" :checked="item.done">
+      <span class="title" :class="{stroke: item.done}">{{ item.title }}</span>
+      <input type="checkbox" class="box" name="" id="" v-model="item.done">
     </span>
   </div>
 </template>
@@ -43,6 +43,12 @@ export default {
     padding: 1%;
     margin: 1% 0%;
     width: 98%;
+
+    .title {
+      &.stroke {
+        text-decoration: line-through;
+      } 
+    }
   }
 }
 </style>
