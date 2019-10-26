@@ -11,7 +11,7 @@ const store = new Vuex.Store({
   },
   mutations: {
     addItem (state, item) {
-      state.items.push(item)
+      state.items.push({ title: item, done: false })
     }
   }
 })
