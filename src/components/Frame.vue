@@ -19,8 +19,7 @@ export default {
   props: {
     items: {
       type: Array,
-      default: () => [ { title: "Call Bob", done: false },
-                       { title: "Pick up Alice at school", done: true } ]
+      default: () => []
     }
   }
 };
