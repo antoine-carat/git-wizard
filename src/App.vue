@@ -2,19 +2,16 @@
   <div id="app">
     <h1>myawesometodolist.ie</h1>
     <Frame />
-    <AddItemField />
   </div>
 </template>
 
 <script>
 import Frame from "./components/Frame.vue";
-import AddItemField from "./components/AddItem.vue";
 
 export default {
   name: "app",
   components: {
-    Frame,
-    AddItemField
+    Frame
   }
 };
 </script>

@@ -4,12 +4,18 @@
       <span class="title" :class="{stroke: item.done}">{{ item.title }}</span>
       <input type="checkbox" class="box" name="" id="" v-model="item.done">
     </span>
+    <AddItemField />
   </div>
 </template>
 
 <script>
+import AddItemField from "./AddItem.vue";
+
 export default {
   name: "Frame",
+  components: {
+    AddItemField
+  },
   props: {
     items: {
       type: Array,

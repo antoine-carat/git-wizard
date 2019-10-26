@@ -17,20 +17,15 @@ export default {
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: left;
 
-  margin: 1% 0%;
-  width: 80%;
+  margin-top: 5%;
+  padding-top: 1%;
+  border-top: 1px solid lightgray;
 
   input {
-    margin: 0%;
-    width: 90%;
-  }
-
-  button {
-    margin: 0%;
-    width: 9%;
+    flex-grow: 1;
   }
 }
 </style>
