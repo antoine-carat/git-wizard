@@ -1,6 +1,6 @@
 <template>
   <div class="add-item">
-    <input type="text" v-model="this.currentItem" name="" id="">
+    <input type="text" v-model="currentItem" name="" id="">
     <button @click="addItem()">Add</button>
   </div>
 </template>

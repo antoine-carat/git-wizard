@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import store from "./store"
 import Frame from "./components/Frame.vue";
 
 export default {
