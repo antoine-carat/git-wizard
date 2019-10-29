@@ -23,6 +23,7 @@ export default {
   margin-top: 5%;
   padding-top: 1%;
   border-top: 1px solid lightgray;
+  width: 100%;
 
   input {
     flex-grow: 1;
