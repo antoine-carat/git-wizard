@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>myawesometodolist.ie</h1>
-    <Frame />
+    <Frame :items="this.items" />
   </div>
 </template>
 
@@ -12,6 +12,11 @@ export default {
   name: "app",
   components: {
     Frame
+  },
+  computed: {
+    items () {
+      return store.state.items
+    }
   }
 };
 </script>
