@@ -1,20 +1,23 @@
 <template>
   <div id="app">
     <h1>myawesometodolist.ie</h1>
-    <Frame />
-    <AddItemField />
+    <Frame :items="this.items" />
   </div>
 </template>
 
 <script>
+import store from "./store";
 import Frame from "./components/Frame.vue";
-import AddItemField from "./components/AddItem.vue";
 
 export default {
   name: "app",
   components: {
-    Frame,
-    AddItemField
+    Frame
+  },
+  computed: {
+    items () {
+      return store.state.items
+    }
   }
 };
 </script>
